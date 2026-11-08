@@ -1,0 +1,56 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kel1_rsi_web
+    restart: always
+    ports:
+      - "8090:80"
+    volumes:
+      - ./html:/var/www/html
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASS=rootpassword
+      - DB_NAME=db_ecommerce_rsi
+      - BASE_URL=http://localhost:8090
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0
+    container_name: kel1_rsi_db
+    restart: always
+    ports:
+      - "3310:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: db_ecommerce_rsi
+    volumes:
+      - kel1_db_data:/var/lib/mysql
+      # Otomatis menjalankan DDL & seeder saat container pertama kali dibuat
+      - ./html/config/database.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: kel1_rsi_pma
+    restart: always
+    ports:
+      - "8091:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    depends_on:
+      - db
+
+volumes:
+  kel1_db_data:
