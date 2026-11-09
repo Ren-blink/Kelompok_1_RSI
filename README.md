@@ -134,10 +134,10 @@ Semua akun default menggunakan kata sandi: **`password123`**
 | 13 | Kelola Produk Toko (CRUD) | Dicky | `TokoController` | `ProdukModel` | `toko/produk_list.php`, `toko/produk_form.php` |
 | 14 | Kelola Profil Toko | Dicky | `TokoController` | `TokoModel` | `toko/profil.php` |
 | 15 | Kelola Order Masuk Toko | Dicky | `TokoController` | `OrderModel` | `toko/pesanan_masuk.php` |
-| 16 | Mengajukan / Atur Pengiriman | Salomo | `TokoController` | `PengirimanModel` | `toko/pesanan_masuk.php` |
-| 17 | Melihat Laporan Penjualan | Salomo | `TokoController` | `TokoModel` | `toko/laporan.php` |
-| 18 | Melihat Saldo Toko | Salomo | `TokoController` | `TokoModel` | `toko/saldo.php` |
-| 19 | Tarik Saldo Toko | Salomo | `TokoController` | `TokoModel` | `toko/saldo.php` |
+| 16 | Mengajukan / Atur Pengiriman | Wira | `TokoController` | `PengirimanModel` | `toko/pesanan_masuk.php` |
+| 17 | Melihat Laporan Penjualan | Wira | `TokoController` | `TokoModel` | `toko/laporan.php` |
+| 18 | Melihat Saldo Toko | Wira | `TokoController` | `TokoModel` | `toko/saldo.php` |
+| 19 | Tarik Saldo Toko | Wira | `TokoController` | `TokoModel` | `toko/saldo.php` |
 | 20 | Kelola Pelanggaran (Admin) | Rajwa | `AdminController` | `PelanggaranModel` | `admin/pelanggaran.php` |
 | 21 | Kelola Akun Pembeli & Merchant | Rajwa | `AdminController` | `UserModel` | `admin/users.php` |
 | 22 | Memproses Transaksi Payment Gateway | Rajwa | `AdminController` | `PembayaranModel` | `admin/transaksi.php` |
