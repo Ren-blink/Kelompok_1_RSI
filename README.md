@@ -4,10 +4,10 @@ Aplikasi Web E-Commerce berbasis arsitektur **Native MVC (Model-View-Controller)
 
 Aplikasi ini menyatukan seluruh **22 Use Case (UC)** yang dirancang oleh 5 anggota Kelompok 1:
 1. **[RN] Rayhan Nauvan Pratama** (UC 02 - UC 06: Kelola Akun, Katalog & Cari Produk, Keranjang Belanja, Checkout Pesanan).
-2. **[MS] Moch Syabil Ar Rasyid** (UC 07 - UC 11: Pembayaran, Lacak Pembayaran, Lacak Pesanan, Ulasan & Rating, Konfirmasi Selesai).
-3. **[DR] Dicky Rinaldi** (UC 12 - UC 15: Laporkan Pelanggaran, CRUD Produk Toko, Profil Toko, Pesanan Masuk Toko).
-4. **[WR] Salomo Wira Arta Manik** (UC 16 - UC 19: Pengiriman & Resi, Laporan Penjualan, Saldo Toko, Tarik Saldo Toko).
-5. **[RS] Rajwa Salsabila Putri** (UC 01, UC 20 - UC 22: Autentikasi Pengguna, Moderasi Pelanggaran Admin, Kelola Akun Pengguna, Transaksi Gateway Webhook).
+2. **[MS] Moch Syabil Averroes** (UC 07 - UC 11: Pembayaran, Lacak Pembayaran, Lacak Pesanan, Ulasan & Rating, Konfirmasi Selesai).
+3. **[DR] Dicky Rizaldi** (UC 12 - UC 15: Laporkan Pelanggaran, CRUD Produk Toko, Profil Toko, Pesanan Masuk Toko). **SEMI GAP, TIDAK IKUT BERKONTRIBUSI DI MODUL 3**
+4. **[WR] Salomo Henry Wirawan Sinaga** (UC 16 - UC 19: Pengiriman & Resi, Laporan Penjualan, Saldo Toko, Tarik Saldo Toko).
+5. **[RS] Rajwa Sultan Faezhar** (UC 01, UC 20 - UC 22: Autentikasi Pengguna, Moderasi Pelanggaran Admin, Kelola Akun Pengguna, Transaksi Gateway Webhook).
 
 ---
 
